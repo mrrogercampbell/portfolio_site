@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
+import './NavBar.css'
 
 class NavBar extends Component {
     render() {
         return (
-            <div>
-                <nav>
-
-                </nav>
+            <div className='navigation-bar'>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to=""></Link>
+                    </li>
+                </ul>
             </div>
         );
     }

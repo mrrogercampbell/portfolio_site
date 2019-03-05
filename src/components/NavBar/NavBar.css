@@ -1,0 +1,11 @@
+.navigation-bar
+ {
+background: #f4f4f4;
+padding-top: 10px
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+}

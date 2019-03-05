@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-
+import NavBar from '../components/NavBar/NavBar'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <NavBar />
         <div
           style={{
             margin: `0 auto`,
