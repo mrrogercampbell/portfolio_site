@@ -1,7 +1,8 @@
 .navigation-bar
  {
 background: #f4f4f4;
-padding-top: 10px
+padding-top: 10px;
+border: lightblue solid 5px;
 }
 
 ul {
