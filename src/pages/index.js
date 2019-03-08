@@ -8,6 +8,7 @@ import BrandStatment from '../components/BrandStatment/BrandStatment'
 import ProjectList from '../components/ProjectList/ProjectList'
 
 import '../components/Image/image.css'
+import MockUp from "../components/MockUp/MockUp";
 
 
 const IndexPage = () => (
@@ -19,7 +20,9 @@ const IndexPage = () => (
       <Image />
     </div>
     <ProjectList />
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className='mockup-div'>
+      <MockUp />
+    </div>
   </Layout>
 )
 
