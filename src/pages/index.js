@@ -6,7 +6,7 @@ import Image from "../components/Image/image"
 import SEO from "../components/seo"
 import BrandStatment from '../components/BrandStatment/BrandStatment'
 import ProjectList from '../components/ProjectList/ProjectList'
-import MockUp from "../components/MockUp/MockUp"
+// import MockUp from "../components/MockUp/MockUp"
 import './index.css'
 
 
@@ -25,9 +25,9 @@ const IndexPage = () => (
         <ProjectList />
       </dviv>
 
-      <div className='mockup-div'>
+      {/* <div className='mockup-div'>
         <MockUp />
-      </div>
+      </div> */}
 
     </div>
   </Layout >

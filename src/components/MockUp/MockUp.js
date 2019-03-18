@@ -16,10 +16,10 @@ import './MockUp.css'
  */
 
 const MockUp = () => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "threed_mockup.png" }) {
+        placeholderImage: file(relativePath: { eq: "${this.props.projectOne}" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
@@ -28,7 +28,7 @@ const MockUp = () => (
         }
       }
     `}
-        render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-    />
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+  />
 )
 export default MockUp

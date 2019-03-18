@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import MockUp from "../MockUp/MockUp"
 import './ProjectList.css'
+import '../MockUp/MockUp.css'
 
 class ProjectList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            projectName: '',
+            projectOne: 'GA_02_-83.jpg',
+            projectTwo: '',
+            projectThree: '',
+            projectFour: '',
         }
         this.mouseOver = this.mouseOver.bind(this)
     }
@@ -26,6 +31,9 @@ class ProjectList extends Component {
                     <li className='project-name'>Project 4</li>
                     <li className='project-name'>Project 5</li>
                 </ul>
+                <div className='mockup-div'>
+                    <MockUp props={this.state} />
+                </div>
             </div>
         );
     }
