@@ -6,9 +6,9 @@ import Image from "../components/Image/image"
 import SEO from "../components/seo"
 import BrandStatment from '../components/BrandStatment/BrandStatment'
 import ProjectList from '../components/ProjectList/ProjectList'
+import MockUp from "../components/MockUp/MockUp"
+import './index.css'
 
-import '../components/Image/image.css'
-import MockUp from "../components/MockUp/MockUp";
 
 
 const IndexPage = () => (
@@ -19,11 +19,18 @@ const IndexPage = () => (
     <div className='img-comp' style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <ProjectList />
-    <div className='mockup-div'>
-      <MockUp />
+    <div className='project-gallery'>
+
+      <dviv className='project-list-gallery'>
+        <ProjectList />
+      </dviv>
+
+      <div className='mockup-div'>
+        <MockUp />
+      </div>
+
     </div>
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage
